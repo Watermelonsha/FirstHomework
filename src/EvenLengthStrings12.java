@@ -1,0 +1,10 @@
+import java.util.*;
+public class EvenLengthStrings12 {
+    public static void main(String[] args) {
+        ArrayList<String> names = new ArrayList<>(Arrays.asList("Бегимай","Айгерим", "Эржан", "Кутман"));
+//список друзей?
+        names.removeIf(name -> name.length() % 2 == 0);//четное не четное
+
+        System.out.println(names);
+    }
+}
