@@ -1,0 +1,17 @@
+//я люблю писать комменатрии, ну просто думаю это доказывает чтоэто все понимаю
+//
+ //
+import java.util.*;// нам нужна * чтобы все классы и штучки работали
+public class UniqueElements1 {
+    public static void main(String[] args) {
+
+        // 1 первыый
+        ArrayList<String> bookpook1 = new ArrayList<>(Arrays.asList("Алиса в стране чудес","Пеппи длинный чулок","Богатый папа, бедный папа"));
+        ArrayList<String> boookpoook2 = new ArrayList<>(Arrays.asList("Алиса в стране чудес","Пеппи длинный чулок"));
+        //названия книг моего детсва :)
+        HashSet<String> merged = new HashSet<>(bookpook1);//хашсет не хранитт похожик
+        merged.addAll(boookpoook2); //тут из 2буков в мержЪ
+        ArrayList<String> uniqueBooks = new ArrayList<>(merged);//а тут в спсок юникбукээс всевыводит
+        System.out.println("Самые уникальные book..: " + uniqueBooks);
+    }
+}
