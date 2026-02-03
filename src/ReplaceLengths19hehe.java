@@ -1,0 +1,14 @@
+import java.util.*;
+public class ReplaceLengths19hehe {
+    public static void main(String[] args) {
+        ArrayList<String> fruits = new ArrayList<>(Arrays.asList("Apple", "Banana", "Kiwi"));
+//длин фрукт
+        ArrayList<Integer> lengths = new ArrayList<>();//
+
+        for (String f : fruits) {//каждый фрукт в списке смотрим
+            lengths.add(f.length());//длинна
+        }
+
+        System.out.println("длинна:  "+lengths);
+    }
+}
