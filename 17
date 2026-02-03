@@ -1,0 +1,10 @@
+import java.util.*;
+public class RemoveNull17 {
+    public static void main(String[] args) {
+        ArrayList<String> students = new ArrayList<>(Arrays.asList("Аймир", null, "Улук", null));
+//списокимен
+        students.removeIf(name -> name == null);//тут он удаляет нулл
+
+        System.out.println(students);
+    }
+}
