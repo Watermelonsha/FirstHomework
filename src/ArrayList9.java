@@ -1,0 +1,10 @@
+import java.util.*;
+public class ArrayList9  {
+    public static void main(String[] args) {
+        ArrayList<String> cities = new ArrayList<>(Arrays.asList("Бишкек", "Каракол", "Ош"));
+//города список
+        String[] cityArray = cities.toArray(new String[0]);//тут эррей лист в обычный массив нужного СаЙзАА
+
+        System.out.println(Arrays.toString(cityArray));//массик в стррчку делает
+    }
+}

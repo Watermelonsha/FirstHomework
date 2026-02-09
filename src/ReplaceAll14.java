@@ -1,0 +1,13 @@
+import java.util.*;
+public class ReplaceAll14 {
+    public static void main(String[] args) {
+        ArrayList<String> words = new ArrayList<>(Arrays.asList("Apple", "Orangee", "Banana"));
+        //список
+        for (int i = 0; i < words.size(); i++) {//форИч чекает все начиная с первого индекса, ну нулевого
+            words.set(i, words.get(i).replaceAll("[AEIOUaeiou]", "*"));
+            //берём слово из i, и из списка глассных онзаменяет все на зведо*ки
+        }
+
+        System.out.println(words);
+    }
+}

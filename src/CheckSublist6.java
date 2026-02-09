@@ -1,0 +1,12 @@
+//уже 6 заданиее
+import java.util.*;
+public class CheckSublist6 {
+    public static void main(String[] args) {
+        ArrayList<String> sports = new ArrayList<>(Arrays.asList( //список Спорт-ххобби
+                "Футбоол", "Теннис", "шашки"));
+
+        ArrayList<String> asSports = new ArrayList<>(Arrays.asList("Футбоол", "Теннис")); //второй списокк
+
+        System.out.println(sports.containsAll(asSports));//тут он смотрит совпадают ли
+    }
+}

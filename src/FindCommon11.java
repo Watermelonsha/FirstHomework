@@ -1,0 +1,17 @@
+import java.util.*;
+public class FindCommon11 {
+    public static void main(String[] args) {
+        ArrayList<String> c1 = new ArrayList<>(Arrays.asList("USA", "Kyrgyzstan", "росиия"));//перый список
+        ArrayList<String> c2 = new ArrayList<>(Arrays.asList("росиия", "Жермани", "USA"));//второй список
+
+        ArrayList<String> common = new ArrayList<>();//одинаковые страыы сюда в новый список
+
+        for (String country : c1) {//тут фор ич цикл проходит по 1 списку
+            if (c2.contains(country)) {//тут то же самое с 2
+                common.add(country);//все идет в коммон
+            }
+        }
+
+        System.out.println(common);
+    }
+}
